@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainContraint"
+    android:id="@+id/layoutConstraint"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Section_01.Activities.ToastAndSnackBarActivity">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <Button
+        android:id="@+id/buttonToast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Curso de Udemy Kotlin"
-        android:textStyle="bold"
-        android:textSize="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Open Toast"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSnackbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonToastAndSnackBar"
+        android:id="@+id/buttonSnackbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Toast &amp; SnackBar"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Open SnackBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
 </androidx.constraintlayout.widget.ConstraintLayout>
