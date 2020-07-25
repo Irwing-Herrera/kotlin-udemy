@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
+import iherrera.cursokotlin.com.Section_01.Activities.LifeCycleEventsActivity
 import iherrera.cursokotlin.com.Section_01.Activities.ToastAndSnackBarActivity
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +14,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnToastAndSnackBar = findViewById<Button>(R.id.buttonToastAndSnackBar)
-
         btnToastAndSnackBar.setOnClickListener { openActivity<ToastAndSnackBarActivity>(this) }
+
+        val btnLifeCycleEvents = findViewById<Button>(R.id.buttonLifeCycleEvents)
+        btnLifeCycleEvents.setOnClickListener { openActivity<LifeCycleEventsActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {

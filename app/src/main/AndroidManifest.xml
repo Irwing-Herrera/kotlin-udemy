@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Section_01.Activities.ToastAndSnackBarActivity"></activity>
+        <activity android:name=".Section_01.Activities.LifeCycleEventsActivity"></activity>
+        <activity android:name=".Section_01.Utils.LifeCycleEventsActivity" />
+        <activity android:name=".Section_01.Activities.ToastAndSnackBarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
