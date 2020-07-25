@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import androidx.constraintlayout.widget.ConstraintLayout
 import iherrera.cursokotlin.com.Section_01.Activities.ToastAndSnackBarActivity
 
 class MainActivity : AppCompatActivity() {
@@ -16,9 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnToastAndSnackBar = findViewById<Button>(R.id.buttonToastAndSnackBar)
 
-        btnToastAndSnackBar.setOnClickListener(View.OnClickListener {
-            openActivity<ToastAndSnackBarActivity>(this)
-        })
+        btnToastAndSnackBar.setOnClickListener { openActivity<ToastAndSnackBarActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {
