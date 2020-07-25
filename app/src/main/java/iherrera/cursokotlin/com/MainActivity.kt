@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.Toast
+import iherrera.cursokotlin.com.Section_01.Activities.ClickEventsActivity
 import iherrera.cursokotlin.com.Section_01.Activities.LifeCycleEventsActivity
 import iherrera.cursokotlin.com.Section_01.Activities.ToastAndSnackBarActivity
 
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         val btnLifeCycleEvents = findViewById<Button>(R.id.buttonLifeCycleEvents)
         btnLifeCycleEvents.setOnClickListener { openActivity<LifeCycleEventsActivity>(this) }
+
+        val btnClickEvents = findViewById<Button>(R.id.buttonToClickEvents)
+        btnClickEvents.setOnClickListener { openActivity<ClickEventsActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {
