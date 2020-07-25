@@ -8,6 +8,7 @@ import android.os.Handler
 import android.widget.Button
 import android.widget.Toast
 import iherrera.cursokotlin.com.Section_01.Activities.ClickEventsActivity
+import iherrera.cursokotlin.com.Section_01.Activities.KotlinAndroidExtensionsActivity
 import iherrera.cursokotlin.com.Section_01.Activities.LifeCycleEventsActivity
 import iherrera.cursokotlin.com.Section_01.Activities.ToastAndSnackBarActivity
 
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         val btnClickEvents = findViewById<Button>(R.id.buttonToClickEvents)
         btnClickEvents.setOnClickListener { openActivity<ClickEventsActivity>(this) }
+
+        val btnKotlinAndroidExtensions = findViewById<Button>(R.id.buttonToKotlinAndroidExtensions)
+        btnKotlinAndroidExtensions.setOnClickListener { openActivity<KotlinAndroidExtensionsActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {
