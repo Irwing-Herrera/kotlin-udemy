@@ -7,10 +7,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.Toast
-import iherrera.cursokotlin.com.Section_01.Activities.ClickEventsActivity
-import iherrera.cursokotlin.com.Section_01.Activities.KotlinAndroidExtensionsActivity
-import iherrera.cursokotlin.com.Section_01.Activities.LifeCycleEventsActivity
-import iherrera.cursokotlin.com.Section_01.Activities.ToastAndSnackBarActivity
+import iherrera.cursokotlin.com.Section_01.Activities.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnKotlinAndroidExtensions = findViewById<Button>(R.id.buttonToKotlinAndroidExtensions)
         btnKotlinAndroidExtensions.setOnClickListener { openActivity<KotlinAndroidExtensionsActivity>(this) }
+
+        buttonToPicasso.setOnClickListener { openActivity<PicassoActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {

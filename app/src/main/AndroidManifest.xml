@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="iherrera.cursokotlin.com">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Section_01.Activities.KotlinAndroidExtensionsActivity"></activity>
+        <activity android:name=".Section_01.Activities.PicassoActivity"></activity>
+        <activity android:name=".Section_01.Activities.KotlinAndroidExtensionsActivity" />
         <activity android:name=".Section_01.Activities.ClickEventsActivity" />
         <activity android:name=".Section_01.Activities.LifeCycleEventsActivity" />
         <activity android:name=".Section_01.Utils.LifeCycleEventsActivity" />
