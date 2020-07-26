@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         val btnKotlinAndroidExtensions = findViewById<Button>(R.id.buttonToKotlinAndroidExtensions)
         btnKotlinAndroidExtensions.setOnClickListener { openActivity<KotlinAndroidExtensionsActivity>(this) }
 
+        val btnToListView = findViewById<Button>(R.id.buttonToListView)
+        btnToListView.setOnClickListener { openActivity<ListViewActivity>(this) }
+
         buttonToPicasso.setOnClickListener { openActivity<PicassoActivity>(this) }
     }
 
