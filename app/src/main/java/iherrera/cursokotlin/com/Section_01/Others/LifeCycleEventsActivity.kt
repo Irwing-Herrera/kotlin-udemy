@@ -1,4 +1,4 @@
-package iherrera.cursokotlin.com.Section_01.Activities
+package iherrera.cursokotlin.com.Section_01.Others
 
 import android.os.Bundle
 import iherrera.cursokotlin.com.R

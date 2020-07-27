@@ -11,13 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Section_01.Activities.Intents.IntentExtraActivity"></activity>
+        <activity android:name=".Section_01.Others.ToolbarActivity"></activity>
+        <activity android:name=".Section_01.Activities.Intents.IntentExtraActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".Section_01.Activities.IntentsActivity" />
         <activity android:name=".Section_01.Activities.ListViewActivity" />
         <activity android:name=".Section_01.Activities.PicassoActivity" />
         <activity android:name=".Section_01.Activities.KotlinAndroidExtensionsActivity" />
         <activity android:name=".Section_01.Activities.ClickEventsActivity" />
-        <activity android:name=".Section_01.Activities.LifeCycleEventsActivity" />
+        <activity android:name=".Section_01.Others.LifeCycleEventsActivity" />
         <activity android:name=".Section_01.Utils.LifeCycleEventsActivity" />
         <activity android:name=".Section_01.Activities.ToastAndSnackBarActivity" />
         <activity android:name=".MainActivity">

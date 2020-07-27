@@ -1,18 +1,23 @@
 package iherrera.cursokotlin.com.Section_01.Activities.Intents
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.widget.Toolbar
 import iherrera.cursokotlin.com.R
 import iherrera.cursokotlin.com.Section_01.Activities.IntentsActivity
 import iherrera.cursokotlin.com.Section_01.Models.Student
+import iherrera.cursokotlin.com.Section_01.Others.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_intent_extra.*
 
-class IntentExtraActivity : AppCompatActivity() {
+class IntentExtraActivity : ToolbarActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intent_extra)
+
+        toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         buttonBack.setOnClickListener { startActivity(Intent(this, IntentsActivity::class.java)) }
 

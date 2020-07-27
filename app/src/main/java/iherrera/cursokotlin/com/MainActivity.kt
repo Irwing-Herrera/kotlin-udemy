@@ -2,21 +2,26 @@ package iherrera.cursokotlin.com
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import iherrera.cursokotlin.com.Section_01.Activities.*
+import iherrera.cursokotlin.com.Section_01.Others.LifeCycleEventsActivity
+import iherrera.cursokotlin.com.Section_01.Others.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ToolbarActivity() {
 
     private var _exitEnabled: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        toolbarToLoad(toolbar as Toolbar)
+        //enableHomeDisplay(true)
 
         val btnToastAndSnackBar = findViewById<Button>(R.id.buttonToastAndSnackBar)
         btnToastAndSnackBar.setOnClickListener { openActivity<ToastAndSnackBarActivity>(this) }
