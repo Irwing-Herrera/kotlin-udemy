@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         val btnToListView = findViewById<Button>(R.id.buttonToListView)
         btnToListView.setOnClickListener { openActivity<ListViewActivity>(this) }
 
+        val btnToIntents = findViewById<Button>(R.id.buttonToIntents)
+        btnToIntents.setOnClickListener { openActivity<IntentsActivity>(this) }
+
         buttonToPicasso.setOnClickListener { openActivity<PicassoActivity>(this) }
     }
 
