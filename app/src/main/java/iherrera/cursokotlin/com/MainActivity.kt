@@ -44,6 +44,10 @@ class MainActivity : ToolbarActivity() {
         buttonToPicasso.setOnClickListener { openActivity<PicassoActivity>(this) }
 
         buttonToPermissions.setOnClickListener { openActivity<PermissionsActivity>(this) }
+
+        buttonToSharedPreferences.setOnClickListener { openActivity<ShredPreferencesActivity>(this) }
+
+        buttonToExtensionFunctions.setOnClickListener { openActivity<ExtensionFunctionsActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {

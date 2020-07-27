@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import iherrera.cursokotlin.com.R
+import iherrera.cursokotlin.com.Section_01.Others.goToActivityResult
 import kotlinx.android.synthetic.main.activity_permissions.*
 
 class PermissionsActivity : AppCompatActivity() {
@@ -54,8 +55,7 @@ class PermissionsActivity : AppCompatActivity() {
             REQUEST_CAMERA_PERMISSION -> {
                 if (grantResults.size == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     // Permiso aceptado
-                    val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                    startActivityForResult(intent, REQUEST_CAMERA_PICTURE)
+                    goToActivityResult(MediaStore.ACTION_IMAGE_CAPTURE, REQUEST_CAMERA_PICTURE)
                 } else {
                     // Permiso denegado
                     Toast.makeText(
