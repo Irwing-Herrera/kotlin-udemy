@@ -42,6 +42,8 @@ class MainActivity : ToolbarActivity() {
         btnToIntents.setOnClickListener { openActivity<IntentsActivity>(this) }
 
         buttonToPicasso.setOnClickListener { openActivity<PicassoActivity>(this) }
+
+        buttonToPermissions.setOnClickListener { openActivity<PermissionsActivity>(this) }
     }
 
     private inline fun <reified T> openActivity(context: Context) {
