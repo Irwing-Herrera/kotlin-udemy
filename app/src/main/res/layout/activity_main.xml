@@ -120,17 +120,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonToPermissions" />
 
+
         <Button
             android:id="@+id/buttonToExtensionFunctions"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="32dp"
             android:text="To Extension Functions"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonToSharedPreferences" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonToSharedPreferences"
+            app:layout_constraintVertical_bias="0.089" />
+
+        <Button
+            android:id="@+id/buttonToDexterLibrary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="Dexter Library"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonToExtensionFunctions" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

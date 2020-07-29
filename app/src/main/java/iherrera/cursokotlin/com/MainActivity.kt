@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import iherrera.cursokotlin.com.Section_01.Activities.*
 import iherrera.cursokotlin.com.Section_01.Others.LifeCycleEventsActivity
 import iherrera.cursokotlin.com.Section_01.Others.ToolbarActivity
+import iherrera.cursokotlin.com.Section_02.Activities.DexterActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : ToolbarActivity() {
@@ -48,6 +49,9 @@ class MainActivity : ToolbarActivity() {
         buttonToSharedPreferences.setOnClickListener { openActivity<ShredPreferencesActivity>(this) }
 
         buttonToExtensionFunctions.setOnClickListener { openActivity<ExtensionFunctionsActivity>(this) }
+
+        buttonToDexterLibrary.setOnClickListener { openActivity<DexterActivity>(this) }
+
     }
 
     private inline fun <reified T> openActivity(context: Context) {
