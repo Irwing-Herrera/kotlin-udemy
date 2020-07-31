@@ -8,7 +8,7 @@
     android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/textViewName"
+        android:id="@+id/headerTextViewName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
@@ -16,7 +16,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewEmail"
+        android:id="@+id/headerTextViewEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
