@@ -11,6 +11,7 @@ import iherrera.cursokotlin.com.Section_01.Activities.*
 import iherrera.cursokotlin.com.Section_01.Others.LifeCycleEventsActivity
 import iherrera.cursokotlin.com.Section_01.Others.ToolbarActivity
 import iherrera.cursokotlin.com.Section_02.Activities.DexterActivity
+import iherrera.cursokotlin.com.Section_03.Activities.MainSection03Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : ToolbarActivity() {
@@ -51,6 +52,8 @@ class MainActivity : ToolbarActivity() {
         buttonToExtensionFunctions.setOnClickListener { openActivity<ExtensionFunctionsActivity>(this) }
 
         buttonToDexterLibrary.setOnClickListener { openActivity<DexterActivity>(this) }
+
+        buttonToSection_03.setOnClickListener { openActivity<MainSection03Activity>(this) }
 
     }
 

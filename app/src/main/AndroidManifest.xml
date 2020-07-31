@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Section_02.Activities.DexterActivity"></activity>
+        <activity android:name=".Section_03.Activities.MainSection03Activity"></activity>
+        <activity android:name=".Section_02.Activities.DexterActivity" />
         <activity android:name=".Section_01.Activities.ExtensionFunctionsActivity" />
         <activity android:name=".Section_01.Activities.ShredPreferencesActivity" />
         <activity android:name=".Section_01.Activities.PermissionsActivity" />

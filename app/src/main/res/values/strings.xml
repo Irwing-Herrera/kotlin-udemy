@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Curso Kotlin</string>
+
+    <string name="open_drawer">Navigation Drawer is open</string>
+    <string name="close_drawer">navigation Drawer is close</string>
+
 </resources>
