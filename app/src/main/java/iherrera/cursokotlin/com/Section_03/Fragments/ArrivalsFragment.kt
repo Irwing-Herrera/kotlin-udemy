@@ -13,7 +13,7 @@ class ArrivalsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        activity?.title = "Arrivals"
         return inflater.inflate(R.layout.fragment_arrivals2, container, false)
     }
 }
